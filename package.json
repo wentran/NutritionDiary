@@ -29,7 +29,6 @@
     "express": "~4.13.1",
     "express-messages": "*",
     "express-session": "^1.13.0",
-    "express-validator": "*",
     "jquery": "^3.1.1",
     "nutritionix": "^0.6.1",
     "serve-favicon": "~2.3.0"
