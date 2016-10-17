@@ -1,0 +1,39 @@
+<div class = "HomePage Display" ng-controller= 'homePageController'>
+	<div class="page-header1">
+		<div class="title"> Nutrition Diary</div>
+	</div>
+	<div class="containerBox">
+		<input class="form-control1" name="search"  ng-model='input' placeholder="Enter food item...">
+		<div class="buttonContainer">
+			<label class="btn btn-primary" ng-click='getNutritionInfo(input)' btn-checkbox>
+				Find Food
+			</label>
+		</div>
+	</div>
+	<br>
+	<h3>
+	</h3>
+	<div class="container1">
+		<div class="panel-group">
+			<div class="panel panel-danger">
+				<div class="panel-heading"><b>Summary</b></div>
+				<div class="list-group">
+					<button type="button" class="list-group-item">Score: {{data.hits[0]._score}}</button>
+					<button type="button" class="list-group-item">Serving: {{data.hits[0].fields.item_name}} </button>
+				</div>
+			</div>
+			<div class="panel panel-success">
+				<div class="panel-heading"><b> Nutrients </b></div>
+				<div class="list-group">
+					<button type="button" class="list-group-item">Calories per serving: {{data.hits[0].fields.nf_calories}}</button>
+					<button type="button" class="list-group-item">Total Carbs:  {{data.hits[0].fields.nf_total_carbohydrate}} (g)</button>
+					<button type="button" class="list-group-item">Protein : {{data.hits[0].fields.nf_protein}} (g) </button>
+					<button type="button" class="list-group-item">Calcium : {{data.hits[0].fields.nf_calcium_dv}} % </button>
+					<button type="button" class="list-group-item">Fiber : {{data.hits[0].fields.nf_dietary_fiber}} (g)</button>
+					<button type="button" class="list-group-item">Iron: {{data.hits[0].fields.nf_iron_dv}} (g) </button>
+					<button type="button" class="list-group-item">Cholesterol :{{data.hits[0].fields.nf_cholesterol}} (mg)</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

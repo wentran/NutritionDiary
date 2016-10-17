@@ -1,0 +1,79 @@
+.title {
+  font-family: 'Lobster', cursive;
+  font-size: 4.5rem;
+  color: #0000CD;
+  text-align: center;
+}
+
+
+.page-header1 {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  margin: 0px 0 20px;
+  border-bottom: 1px solid #eee;
+  background-color: #D3D3D3;
+}
+
+
+.buttonContainer{
+	margin: auto;
+	padding-top: 12px;
+} 
+.btn {
+    border: 0 none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+
+
+.containerBox{
+	width: 30%;
+	margin: auto;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+
+.container1{
+	width: 30%;
+	margin: 0 auto;
+	margin-top: 5px;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+
+
+.form-control1 {
+  display: block;
+  width: 60%;
+  height: 40px;
+  margin: auto;
+  padding: $input-padding-y $input-padding-x;
+  font-size: $font-size-base;
+  line-height: $input-line-height;
+  color: $input-color;
+  background-color: $input-bg;
+  // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214.
+  background-image: none;
+  background-clip: padding-box;
+  border: $input-btn-border-width solid $input-border-color;
+  @if $enable-rounded {
+    
+    border-radius: $input-border-radius;
+  } @else {
+    // Otherwise undo the iOS default
+    border-radius: 2;
+  }
+}
